@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './fonts.css';
+
+@layer base {
+    body {
+       @apply bg-gray-800 bg-top bg-no-repeat bg-cover min-h-screen flex justify-center items-center;
+       background-image: url('/images/gradient.png');
+    }
+
+    h1, button {
+        font-family: Druk Wide Bold;
+    }
+
+    h1, button, p {
+        @apply text-white;
+    }   
+
+    button {
+        @apply text-base leading-5 tracking-normal;
+        padding: 21px 52px 21px 52px;
+        border-radius: 30px;
+    }
+
+    h1 {
+        @apply tracking-normal;
+        font-size: 68px;
+        line-height: 94px;
+    }
+
+    p {
+        @apply text-xl leading-8 tracking-normal text-left mb-10;
+        font-family: Rubik Light;
+        width: 582px;
+    }
+
+    section {
+        @apply relative flex flex-col items-end;
+        height: 500px;
+        width: 1000px;
+    }
+
+    section::before {
+        @apply absolute bg-no-repeat;
+        content: '';
+        top: -70px;
+        left: -200px;
+        width: 420px;
+        height: 618px;
+        border-radius: 40px;
+        background-image: url('/images/bg.png');
+        box-shadow: 60px 34px 50px 0px #0000001A;
+        z-index: -1;
+    }
+}
+
+.btn--orange {
+    @apply bg-orange-600 mr-5;
+}
+
+.btn--transparent {
+    background-color: transparent;
+    border: 1px solid #0083FE;
+}
+
+
+
+
+
