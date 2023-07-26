@@ -25,15 +25,16 @@
     }
 
     h1 {
-        @apply tracking-normal;
+        @apply tracking-normal mb-8;
         font-size: 68px;
         line-height: 94px;
     }
 
     p {
-        @apply text-xl leading-8 tracking-normal text-left mb-10;
+        @apply text-xl leading-8 tracking-normal text-left mb-10 mr-8;
         font-family: Rubik Light;
         width: 582px;
+        color: #F7F7FF;
     }
 
     section {
